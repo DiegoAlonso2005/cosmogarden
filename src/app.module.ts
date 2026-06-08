@@ -167,6 +167,7 @@ export class SaleController {
       url: 'postgresql://pi:ZBzCoTjqEBkX3oJAFG7kp7DnwDPqbPEr@dpg-d8c6i7f7f7vs73b33npg-a.virginia-postgres.render.com/pi_wt35', // 👈 Pasamos toda la URL directo aquí
       entities: [Product, User, Sale],
       synchronize: true, // Esto creará las tablas automáticamente en el Postgres de Render
+      autoLoadEntities: true,
       ssl: true, // 👈 Render exige SSL seguro para bases de datos en la nube
       extra: {
         ssl: {

@@ -389,6 +389,7 @@ exports.AppModule = AppModule = __decorate([
                 url: 'postgresql://pi:ZBzCoTjqEBkX3oJAFG7kp7DnwDPqbPEr@dpg-d8c6i7f7f7vs73b33npg-a.virginia-postgres.render.com/pi_wt35',
                 entities: [Product, User, Sale],
                 synchronize: true,
+                autoLoadEntities: true,
                 ssl: true,
                 extra: {
                     ssl: {
